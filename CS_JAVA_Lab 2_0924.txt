@@ -1,0 +1,4 @@
+import java.util.Scanner; 
+public class Main {
+    public static void main(String[] args) { Scanner input = new Scanner(System.in); int availableHours = input.nextInt(); int devicesToTest = input.nextInt(); if (availableHours < 4) { System.out.println("Invalid Input"); } else { int devicesTested = availableHours / 4; if (devicesTested > devicesToTest) { devicesTested = devicesToTest; } int remainingDevices = devicesToTest - devicesTested; System.out.println(devicesTested); System.out.println(remainingDevices); } input.close(); } }
+                                                                                                                            
